@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+:root {
+  --primary-color: #0c1421;
+  --secondary-color: #313957;
+  --border-color: #d4d7e3;
+  --input-bg-col: #f7fbff;
+  --link-color: #1e4ae9;
+  --button-color: #162d3a;
+  --white: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 48px;
+  width: 100%;
+}
+
+.container .grid .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.container .grid .main-wrapper .login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+.container .grid .main-wrapper .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+/* Single element style */
+h1 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.input {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input label {
+  font-size: 16px;
+  color: var(--primary-color);
+  text-align: start;
+}
+
+.line-or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.line-or hr {
+  width: 100%;
+  color: var(--border-color);
+}
+.line-or span {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.social-signin {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.social-signin button {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 16px;
+  background-color: var(--input-bg-col);
+  border-radius: 5px;
+}
+
+.copywrite {
+  color: var(--border-color);
+  font-size: 14px;
+}
+
+.input input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--input-bg-col);
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.forget {
+  font-size: 16px;
+  color: var(--link-color);
+  cursor: pointer;
+  text-align: end;
+  width: 100%;
+}
+
+.signinbtn {
+  background-color: var(--button-color);
+  color: var(--white);
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+
+
